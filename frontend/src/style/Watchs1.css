@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* Main Section */
+.Add {
+    height: 100vh;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+}
+
+/* Watch Container */
+.watchs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+    max-height: 90vh; /* Prevents it from exceeding the screen height */
+    overflow-y: auto; /* Enables scrolling when content overflows */
+    padding-right: 5px; 
+}
+
+/* Watch Box */
+.watch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 280px; 
+    height: 380px; 
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    overflow: hidden; 
+    background-color: rgb(255, 255, 255);
+}
+
+/* Hover Effect */
+.watch:hover {
+    transform: scale(1.05);
+    border-color: #af7c4c;
+}
+
+/* Image Container */
+.WI {
+    width: 110%;
+    height: 300px; /* Increased height for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    border-radius: 8px;
+}
+
+/* Image Styling */
+.WI img {
+    width: 150%;
+    height: 150%;
+    object-fit: contain; /* Ensures full image visibility */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Divider Line */
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: #413e3e; /* Lighter color for a softer look */
+    margin: 5px 0;
+}
+
+/* Watch Title & Details */
+.watch-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Watch Title */
+.watch-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 3px;
+}
+
+/* Price & Discount */
+.watch-details {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Delete & Update Buttons */
+.delete, .update {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.delete:hover {
+    background-color: darkred;
+}
+
+.update {
+    background-color: blue;
+    color: white;
+}
+
+.update:hover {
+    background-color: darkblue;
+}
